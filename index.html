@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -18,6 +18,17 @@
             text: 'Hello, world!',
             callback: function (t) {
               return t.card().then(card => alert('Hello, world!'))
+            }
+          }
+        ]
+      },
+      'board-buttons': function (t, options) {
+        return [
+          {
+            icon: '',
+            text: 'Anotações',
+            callback: (t) => {
+              return t.card().then(card => alert("Hello, world!"))
             }
           }
         ]
