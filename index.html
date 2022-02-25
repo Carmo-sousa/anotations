@@ -27,7 +27,8 @@
           {
             icon: '',
             text: 'Anotações',
-            callback: (t) => {
+            callback: () => {
+              let t = TrelloPowerUp.ifreme();
               t.modal({
                 // the url to load for the iframe
                 url: './modal.html',
