@@ -10,7 +10,9 @@
     <h1 id="title">Hello, world!</h1>
     <script>
         let title = document.getElementById('title');
-        console.log(title.textContent);
+        var t = TrelloPowerUp.iframe();
+        
+        title.textContent = t.arg('title');
     </script>
 </body>
 </html>
